@@ -1,3 +1,5 @@
-import startApp from './app.mjs';
+import startApp, { scramble } from './app.mjs';
 
-document.addEventListener('DOMContentLoaded', startApp); 
+
+document.addEventListener('DOMContentLoaded', startApp, scramble);
+document.getElementById('button').addEventListener('click', scramble, true);
